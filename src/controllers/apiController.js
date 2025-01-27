@@ -1,11 +1,14 @@
 // apiController.js
 const externalApiService = require('../services/externalApiService');
+const externalApiStoreService = require('../services/externalApiStoreService');
 
 module.exports = {
   async getUser(req, res) {
     try {
       const { id } = req.params;
       const user = await externalApiService.getUserById(id);
+      const store = await externalApiStoreService.getStoreById(id);
+      user.data.store = store;
       res.status(200).json(user);
     } catch (error) {
       res.status(500).json({ message: 'Error retrieving user', error });
