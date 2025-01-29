@@ -21,7 +21,7 @@ const options = {
         },
         servers:[
             {
-                url: 'http://localhost:3001/api/',
+                url: `${process.env.SERVER_PRODUCTION}api/`,
             }
         ]
     },
