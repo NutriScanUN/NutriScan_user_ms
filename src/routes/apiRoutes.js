@@ -171,18 +171,12 @@ router.get('/users/:id', apiController.getUser); // Consultar usuario por ID
  *               fecha_nacimiento:
  *                 type: object
  *                 description: Fecha de nacimiento en formato TimeStamp de Firebase.
- *                 properties:
- *                   seconds:
- *                     type: integer
- *                     example: 1738123242
- *                   nanoseconds:
- *                     type: integer
- *                     example: 927000000
+ *                 example: "Wed Jan 15 2002 07:00:00 GMT-0500 (Colombia Standard Time)"
  *               fecha_registro:
  *                 type: string
  *                 format: date-time
  *                 description: Fecha de registro en formato ISO 8601.
- *                 example: "2025-01-15T12:00:00.000Z"
+ *                 example: "Wed Jan 15 2025 07:00:00 GMT-0500 (Colombia Standard Time)"
  *               rol:
  *                 type: string
  *                 description: Rol del usuario.
