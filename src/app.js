@@ -21,7 +21,7 @@ const options = {
         },
         servers:[
             {
-                url: `https://nutriscan-user-ms.onrender.com/api`,
+                url: `https://user-ms:${process.env.PORT}/api`,
             }
         ]
     },
