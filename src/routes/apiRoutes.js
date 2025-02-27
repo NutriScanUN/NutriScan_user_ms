@@ -169,7 +169,7 @@ router.get('/users/:id', apiController.getUser); // Consultar usuario por ID
  *                 description: URL de la imagen del usuario.
  *                 example: ""
  *               fecha_nacimiento:
- *                 type: object
+ *                 type: string
  *                 description: Fecha de nacimiento en formato TimeStamp de Firebase.
  *                 example: "Wed Jan 15 2002 07:00:00 GMT-0500 (Colombia Standard Time)"
  *               fecha_registro:
