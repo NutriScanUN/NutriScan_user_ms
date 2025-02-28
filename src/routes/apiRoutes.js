@@ -255,15 +255,9 @@ router.post('/users', apiController.createUser); // Crear un usuario
  *                 description: URL de la imagen del usuario.
  *                 example: ""
  *               fecha_nacimiento:
- *                 type: object
- *                 description: Fecha de nacimiento en formato TimeStamp de Firebase.
- *                 properties:
- *                   _seconds:
- *                     type: integer
- *                     example: 1738123242
- *                   nanoseconds:
- *                     type: integer
- *                     example: 927000000
+ *                 type: string
+ *                 description: Fecha de nacimiento en formato string.
+ *                 example: "Wed Jan 15 2002 07:00:00 GMT-0500 (Colombia Standard Time)"
  *               ajustes:
  *                 type: object
  *                 description: Configuraciones del usuario.
