@@ -26,7 +26,7 @@ const options = {
         },
         servers:[
             {
-                url: `https://user-ms:${process.env.PORT}/api`,
+                url: `https://34.2.5.32:${process.env.PORT}/api`,
             }
         ]
     },
